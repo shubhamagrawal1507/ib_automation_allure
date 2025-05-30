@@ -27,7 +27,7 @@ jobs:
       run: python -m playwright install --with-deps
       
     - name: Run your tests
-      run: pytest --tracing=retain-on-failure --alluredir=allure-results
+      run: pytest 
       
     - name: Upload Allure Report as an artifact
       uses: actions/upload-artifact@v4
